@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Homework\Lab_work2\bin\Debug\Lab_work2.exe.config
+C:\Users\User\source\repos\Homework\Lab_work2\bin\Debug\Lab_work2.exe
+C:\Users\User\source\repos\Homework\Lab_work2\bin\Debug\Lab_work2.pdb
+C:\Users\User\source\repos\Homework\Lab_work2\obj\Debug\Lab_work2.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Homework\Lab_work2\obj\Debug\Lab_work2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Homework\Lab_work2\obj\Debug\Lab_work2.exe
+C:\Users\User\source\repos\Homework\Lab_work2\obj\Debug\Lab_work2.pdb
