@@ -9,7 +9,7 @@ public class Program
 
     public static void Main(string[] args)
     {
-        Console.WriteLine("Тема - Сказки\nДанная программа выводит информацию о каждой сказке в двух вариантах: сокращенном и подробном\n");
+        Console.WriteLine("Fairytales: ");
 
         // Создание объектов сказок
 
@@ -21,19 +21,17 @@ public class Program
 
 
         bool flag = true;
-        bool flag1 = true;
         bool flag2 = true;
-        bool flag3 = true;
         while (flag)
         {
+            
             try
             {
-                Console.WriteLine("1 - Золушка, \n2 - красная шапочка, \n3 - Тараканище, \n0 - выход из программы");
+                Console.WriteLine("\n1 - Cinderella \n2  Little Red Riding Hood \n3 - Cock-The-Roach \n0 - exit\n");
+                Console.Write("Choose the option: ");
                 if (int.TryParse(Console.ReadLine(), out int number))
                 {
-                    flag1 = true;
                     flag2 = true;
-                    flag3 = true;
                     if (number == 0)
                     {
                         flag = false;
@@ -41,9 +39,10 @@ public class Program
                     if (number == 1)
                     {
                         cinderella.Name();
-                        while (flag1)
+                        while (flag2)
                         {
-                            Console.WriteLine("1 - краткая информация, \n2 - подробная информация, \n3 - описание, \n4 - сюжет и моральный урок, \n5 - ссылка на книгу, \n0 - выход к списку книг");
+                            Console.WriteLine("1 - short information \n2 - Extended information \n3 - Description \n4 - Plot and moral lesson \n5 - Link \n0 - Back to the book list");
+                            Console.Write("\nChoose the option: ");
                             if (int.TryParse(Console.ReadLine(), out int number2))
                             {
                                 if (number2 == 1)
@@ -69,7 +68,7 @@ public class Program
                                 }
                                 if (number2 == 0)
                                 {
-                                    flag1 = false;
+                                    flag2 = false;
                                 }
                             }
                         }
@@ -81,7 +80,8 @@ public class Program
                         redRidingHood.Name();
                         while (flag2)
                         {
-                            Console.WriteLine("1 - краткая информация, \n2 - подробная информация, \n3 - описание, \n4 - сюжет и моральный урок, \n5 - ссылка на книгу, \n0 - выход к списку книг");
+                            Console.WriteLine("1 - short information \n2 - Extended information \n3 - Description \n4 - Plot and moral lesson \n5 - Link \n0 - Back to the book list");
+                            Console.Write("\nChoose the option: ");
                             if (int.TryParse(Console.ReadLine(), out int number2))
                             {
                                 if (number2 == 1)
@@ -115,9 +115,10 @@ public class Program
                     if (number == 3)
                     {
                         cockTheRoach.Name();
-                        while (flag3)
+                        while (flag2)
                         {
-                            Console.WriteLine("1 - краткая информация, \n2 - подробная информация, \n3 - описание, \n4 - сюжет и моральный урок, \n5 - ссылка на книгу, \n0 - выход к списку книг");
+                            Console.WriteLine("1 - short information \n2 - Extended information \n3 - Description \n4 - Plot and moral lesson \n5 - Link \n0 - Back to the book list");
+                            Console.Write("\nChoose the option: ");
                             if (int.TryParse(Console.ReadLine(), out int number2))
                             {
                                 if (number2 == 1)
@@ -143,8 +144,9 @@ public class Program
                                 }
                                 if (number2 == 0)
                                 {
-                                    flag3 = false;
+                                    flag2 = false;
                                 }
+                                
                             }
                         }
                     }
@@ -162,13 +164,7 @@ public class Program
             {
                 Console.WriteLine(e.ToString());
             }
-
-        }
-            
-    }
-
-            
-            
-            // Вывод информации о сказках
+        }           
+    }                   
 }
 

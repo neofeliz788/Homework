@@ -1,6 +1,7 @@
 ﻿namespace Homework
 {
     using System;
+    using System.Security.Principal;
 
     enum AccountType
     {
@@ -150,62 +151,98 @@
     }
     class Program
     {
+        
         static void Main(string[] args)
         {
-            Console.WriteLine("Упражнение 7.1: ");
-            Account myAccount = new Account();
-            myAccount.Info(2281337, 1890000, AccountType.текущий);
-            myAccount.Print();
-            Console.WriteLine("Упражнение 7.2: ");
-            UniqueAccount myUniqueAccount = new UniqueAccount();
-            myUniqueAccount.Info(0, 12384, AccountType.сберегательный);
-            myUniqueAccount.BankAccount();
-            myUniqueAccount.Print();
-
-            UniqueAccount myUniqueAccount2 = new UniqueAccount();
-            myUniqueAccount2.Info(0, 123536, AccountType.текущий);
-            myUniqueAccount2.BankAccount();
-            myUniqueAccount2.Print();
-
-            UniqueAccount myUniqueAccount3 = new UniqueAccount();
-            myUniqueAccount3.Info(0, 7812312, AccountType.сберегательный);
-            myUniqueAccount3.BankAccount();
-            myUniqueAccount3.Print();
+            bool flag = true;
+            while (flag == true)
+            try
+            {
 
 
-            Console.WriteLine("Упражнение 7.3:\nдо зачисления ");
-            myAccount.Print();
-            myAccount.Deposit(110000);
-            Console.WriteLine("после зачисления ");
-            myAccount.Print();
-            Console.WriteLine("после снятия суммы ");
-            myAccount.Withdraw(500000);
-            myAccount.Print();
-            Console.WriteLine("если сумма снятия больше баланса: ");
-            myAccount.Withdraw(5000000);
-            myAccount.Print();
+                Console.WriteLine("1 - упражнение 7.1\n2 - упражнение 7.2\n3 - упражнение 7.3\n4 - домашнее задание 7.1\n0 - выход из программы");
+                Console.Write("Выберите задание: ");
+                if (int.TryParse(Console.ReadLine(), out int num))
+                {
+                    if (num == 1)
+                    {
+                        Console.WriteLine("\nУпражнение 7.1: ");
+                        Account myAccount = new Account();
+                        myAccount.Info(2281337, 1890000, AccountType.текущий);
+                        myAccount.Print();
+                    }
+                    if (num == 2)
+                    {
+                        Console.WriteLine("\nУпражнение 7.2: ");
+                        UniqueAccount myUniqueAccount = new UniqueAccount();
+                        myUniqueAccount.Info(0, 12384, AccountType.сберегательный);
+                        myUniqueAccount.BankAccount();
+                        myUniqueAccount.Print();
 
-            Console.WriteLine("Домашнее задание 7.1: ");
-            Building building1 = new Building(100, 10, 400, 8);
-            Console.WriteLine("Номер здания: " + building1.GetBuildingNumber());
-            Console.WriteLine("Высота здания: " + building1.GetHeight());
-            Console.WriteLine("Этажи: " + building1.GetFloors());
-            Console.WriteLine("Количество квартир: " + building1.GetApartments());
-            Console.WriteLine("Количество подъездов: " + building1.GetEntrances());
-            Console.WriteLine("Высота одного этажа: " + building1.CalculateFloorHeight());
-            Console.WriteLine("Квартир в подъезде: " + building1.CalculateApartmentsPerEntrance());
-            Console.WriteLine("Квартир на этаже: " + building1.CalculateApartmentsPerFloor());
+                        UniqueAccount myUniqueAccount2 = new UniqueAccount();
+                        myUniqueAccount2.Info(0, 123536, AccountType.текущий);
+                        myUniqueAccount2.BankAccount();
+                        myUniqueAccount2.Print();
 
-            Building building2 = new Building(315, 15, 900, 15);
-            Console.WriteLine("\nНомер здания: " + building2.GetBuildingNumber());
-            Console.WriteLine("Высота здания: " + building2.GetHeight());
-            Console.WriteLine("Этажи: " + building2.GetFloors());
-            Console.WriteLine("Количество квартир: " + building2.GetApartments());
-            Console.WriteLine("Количество подъездов: " + building2.GetEntrances());
-            Console.WriteLine("Высота одного этажа: " + building2.CalculateFloorHeight());
-            Console.WriteLine("Квартир в подъезде: " + building2.CalculateApartmentsPerEntrance());
-            Console.WriteLine("Квартир на этаже: " + building2.CalculateApartmentsPerFloor());
+                        UniqueAccount myUniqueAccount3 = new UniqueAccount();
+                        myUniqueAccount3.Info(0, 7812312, AccountType.сберегательный);
+                        myUniqueAccount3.BankAccount();
+                        myUniqueAccount3.Print();
 
+                    }
+                    if (num == 3)
+                    {
+                        Console.WriteLine("\nУпражнение 7.3:\nдо зачисления ");
+                        Account myAccount = new Account();
+                        myAccount.Info(2281337, 1890000, AccountType.текущий);
+                        myAccount.Print();
+                        myAccount.Deposit(110000);
+                        Console.WriteLine("после зачисления ");
+                        myAccount.Print();
+                        Console.WriteLine("после снятия суммы ");
+                        myAccount.Withdraw(500000);
+                        myAccount.Print();
+                        Console.WriteLine("если сумма снятия больше баланса: ");
+                        myAccount.Withdraw(5000000);
+                        myAccount.Print();
+                    }
+                    if (num == 4)
+                    {
+                        Console.WriteLine("\nДомашнее задание 7.1: ");
+                        Building building1 = new Building(100, 10, 400, 8);
+                        Console.WriteLine("Номер здания: " + building1.GetBuildingNumber());
+                        Console.WriteLine("Высота здания: " + building1.GetHeight());
+                        Console.WriteLine("Этажи: " + building1.GetFloors());
+                        Console.WriteLine("Количество квартир: " + building1.GetApartments());
+                        Console.WriteLine("Количество подъездов: " + building1.GetEntrances());
+                        Console.WriteLine("Высота одного этажа: " + building1.CalculateFloorHeight());
+                        Console.WriteLine("Квартир в подъезде: " + building1.CalculateApartmentsPerEntrance());
+                        Console.WriteLine("Квартир на этаже: " + building1.CalculateApartmentsPerFloor());
+
+                        Building building2 = new Building(315, 15, 900, 15);
+                        Console.WriteLine("\nНомер здания: " + building2.GetBuildingNumber());
+                        Console.WriteLine("Высота здания: " + building2.GetHeight());
+                        Console.WriteLine("Этажи: " + building2.GetFloors());
+                        Console.WriteLine("Количество квартир: " + building2.GetApartments());
+                        Console.WriteLine("Количество подъездов: " + building2.GetEntrances());
+                        Console.WriteLine("Высота одного этажа: " + building2.CalculateFloorHeight());
+                        Console.WriteLine("Квартир в подъезде: " + building2.CalculateApartmentsPerEntrance());
+                        Console.WriteLine("Квартир на этаже: " + building2.CalculateApartmentsPerFloor());
+                        Console.WriteLine("");
+                    }
+                    if (num == 0)
+                        {
+                            flag = false;
+                        }
+                }
+               
+               
+
+               
+
+              
+            }
+            catch { }
         }
     }
 }
