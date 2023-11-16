@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Homework\Taks\bin\Debug\Taks.exe.config
+C:\Users\User\source\repos\Homework\Taks\bin\Debug\Taks.exe
+C:\Users\User\source\repos\Homework\Taks\bin\Debug\Taks.pdb
+C:\Users\User\source\repos\Homework\Taks\obj\Debug\Task.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Homework\Taks\obj\Debug\Task.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Homework\Taks\obj\Debug\Taks.exe
+C:\Users\User\source\repos\Homework\Taks\obj\Debug\Taks.pdb
