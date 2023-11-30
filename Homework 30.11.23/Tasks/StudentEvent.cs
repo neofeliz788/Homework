@@ -47,7 +47,7 @@ namespace Task
         public void ToFile(string path)
         {
             File.AppendAllText(path, $"Мероприятие: {eventName} | Дата: {eventDate} | Участников: {numberOfStudents}\n");
-        }S
+        }
         public void SelectionParticipants(List<List<Student>> studentsDivided, string path)
         {
             int[] Registrants = new int[studentsDivided.Count];
