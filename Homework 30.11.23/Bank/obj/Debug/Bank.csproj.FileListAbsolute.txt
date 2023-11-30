@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Homework 30.11.23\Bank\bin\Debug\Bank.exe.config
+C:\Users\User\source\repos\Homework 30.11.23\Bank\bin\Debug\Bank.exe
+C:\Users\User\source\repos\Homework 30.11.23\Bank\bin\Debug\Bank.pdb
+C:\Users\User\source\repos\Homework 30.11.23\Bank\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Homework 30.11.23\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Homework 30.11.23\Bank\obj\Debug\Bank.exe
+C:\Users\User\source\repos\Homework 30.11.23\Bank\obj\Debug\Bank.pdb

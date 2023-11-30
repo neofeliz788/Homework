@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\bin\Debug\Tumakov.exe.config
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\bin\Debug\Tumakov.exe
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\bin\Debug\Tumakov.pdb
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\obj\Debug\Tumakov.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\obj\Debug\Tumakov.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\obj\Debug\Tumakov.exe
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\obj\Debug\Tumakov.pdb
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\User\source\repos\Homework 30.11.23\Tumakov\obj\Debug\Tumakov.csproj.CopyComplete
